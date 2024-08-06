@@ -1,12 +1,42 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+button {  
+  text-transform: uppercase;
+  padding: 9px 17px;  
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #555; 
+}
 .app {
   display: flex;
 }
 
 .sidebar {
-  width: 200px;
-  background-color: #f5f5f5;
+  width: 4vw;
   height: 100vh;
   padding: 20px;
+  background-color: #4a4a59fc;
 }
 
 .main-content {
@@ -19,18 +49,37 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: #f5f5f5;
+  
 }
+
+.header-left {
+  display: flex;
+  align-items: center;
+  padding:0px 75px
+}
+
+.header-left h1 {
+  margin-right: 20px;
+}
+
+.reactivate-btn {
+  padding: 7px 10px;
+  background-color: #7ce180;
+}
+
+.header-right button {
+  margin-left: 10px;
+}
+
 
 .content {
   display: flex;
-  padding: 20px;
 }
 
 .center-section {
   flex: 2;
-  margin-right: 20px; /* Add space between center and right sections */
+  margin-right: 20px; 
+  padding: 0px 75px;
 }
 
 .right-section {
@@ -45,4 +94,47 @@
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
+  background-color: rgb(61, 61, 79);
+}
+
+.card-right{
+  border-bottom: 1px solid;
+  border-color: grey;
+  width: 80%;
+}
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-right {
+  display: flex;
+  align-items: center;
+}
+
+.status-right p {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.links{
+  color:  rgb(118, 215, 126);
+
+}
+
+.green{
+  background-color: rgb(118, 215, 126);
+}
+.original{
+  background-color:rgb(29, 29, 56);
+ color: white;
+ border:2px solid white
+}
+.store-button{
+  background-color: orange;
+}
+.rescan-button{
+  background-color: black;
+  color:white;
+  border: 2px solid white;
 }
