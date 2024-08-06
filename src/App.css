@@ -3,6 +3,7 @@ body {
   color: white;
   margin: 0;
   font-family: Arial, sans-serif;
+  font:bold
 }
 
 * {
@@ -33,11 +34,33 @@ button:hover {
 }
 
 .sidebar {
-  width: 4vw;
+  width: 5vw;
   height: 100vh;
-  padding: 20px;
   background-color: #4a4a59fc;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.icon-container {
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container.active {
+  background-color: blue;
+}
+
+.icon-container svg {
+  width: 24px;
+  height: 24px;
+}
+
 
 .main-content {
   flex: 1;
@@ -66,7 +89,9 @@ button:hover {
   padding: 7px 10px;
   background-color: #7ce180;
 }
-
+.header-right{
+  display: flex;
+}
 .header-right button {
   margin-left: 10px;
 }
@@ -126,15 +151,30 @@ button:hover {
   background-color: rgb(118, 215, 126);
 }
 .original{
-  background-color:rgb(29, 29, 56);
- color: white;
+  background-color: rgb(61, 61, 79);
+   color: white;
  border:2px solid white
 }
 .store-button{
   background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4px
 }
 .rescan-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
   background-color: black;
   color:white;
   border: 2px solid white;
+}
+.orange{
+  color:orange
+}
+.btns{
+  display: flex;
+  gap:20px
 }
