@@ -3,6 +3,7 @@ import Statistics from './Statistics';
 import MobileTuneUp from './MobileTuneUp';
 import HelpCenter from './HelpCenter';
 import {ReactComponent as Refresh} from '../assets/icons/refresh.svg'
+
 function Home() {
   return (
     <>
